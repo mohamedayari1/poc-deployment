@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+<<<<<<< HEAD
+  name: app1-nginx-deployment
+  labels:
+    app: app1-nginx
+=======
+  name: streamlit-ui-deployment
+  labels:
+    app: streamlit-ui
+>>>>>>> f92c230 (Set UP CI CD for UI)
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+<<<<<<< HEAD
+      app: app1-nginx
+  template:
+    metadata:
+      labels:
+        app: app1-nginx
+=======
+      app: streamlit-ui
+  template:
+    metadata:
+      labels:
+        app: streamlit-ui
+>>>>>>> f92c230 (Set UP CI CD for UI)
+    spec:
+      imagePullSecrets:
+        - name: acr-auth  # Ensure this matches the secret name
+      containers:
+<<<<<<< HEAD
+        - name: app1-nginx
+=======
+        - name: streamlit-ui
+>>>>>>> f92c230 (Set UP CI CD for UI)
+          image: IMAGE_PLACEHOLDER  # This will be replaced in the GitHub Action
+          ports:
+            - containerPort: 80

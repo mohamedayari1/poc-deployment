@@ -1,0 +1,27 @@
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore environment variable files
+.env
+*.env
+
+# Ignore log files
+*.log
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE specific files (e.g., for PyCharm, VSCode)
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Ignore Poetry files
+poetry.lock  # Added to ignore the Poetry lock file
+.poetry/
+
+# Ignore Docker-related files if they are not needed
+*.tar
+*.gz

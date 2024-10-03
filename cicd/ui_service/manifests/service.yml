@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Service
+metadata:
+<<<<<<< HEAD
+  name: app1-nginx-loadbalancer-service
+  labels:
+    app: app1-nginx
+spec:
+  type: LoadBalancer
+  selector:
+    app: app1-nginx
+  ports:
+    - port: 80
+      targetPort: 80
+=======
+  name: streamlit-ui-loadbalancer-service
+  labels:
+    app: streamlit-ui
+spec:
+  type: LoadBalancer
+  selector:
+    app: streamlit-ui
+  ports:
+    - port: 80
+      targetPort: 8500
+>>>>>>> f92c230 (Set UP CI CD for UI)
